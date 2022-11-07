@@ -8,6 +8,7 @@ public class PatrolEnemy : MonoBehaviour
     [SerializeField] private int _maxSpeed = 5;
     [SerializeField] private LayerMask _groundMask;
     [SerializeField] private float _rayDistance = 0.05f;
+    [SerializeField] GameObject _player;
 
     private Rigidbody2D _rb;
     private BoxCollider2D _boxCollider;
@@ -26,21 +27,12 @@ public class PatrolEnemy : MonoBehaviour
     {
         if (EndOfPlatform())
         {
-            Debug.Log("End of platform");
             Move();
         }
         else
         {
             FlipSprite();
         }
-        //For testing draws the ray used to control end of platform collision
-
-        //if (_movingLeft)
-        //    Debug.DrawLine(_boxCollider.bounds.min, _boxCollider.bounds.min - new Vector3(-_rayDistance, -_rayDistance), Color.yellow);
-        //else
-        //    Debug.DrawLine(_boxCollider.bounds.min + new Vector3(_boxCollider.bounds.extents.x * 2,0f,0f), 
-        //        ((_boxCollider.bounds.min + new Vector3(_boxCollider.bounds.extents.x * 2, 0f, 0f)) - new Vector3(_rayDistance, -_rayDistance)),
-        //        Color.yellow);
     }
 
     private void Move()
@@ -67,5 +59,18 @@ public class PatrolEnemy : MonoBehaviour
         _rb.velocity = new Vector2(0f, 0f);
         _movingLeft = !_movingLeft;
         _speed *= -1;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+      
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        { 
+            _player.GetComponent<PlayerController>().Hit();
+        }
     }
 }
