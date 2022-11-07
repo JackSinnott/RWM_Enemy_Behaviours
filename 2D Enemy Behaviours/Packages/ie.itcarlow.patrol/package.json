@@ -1,0 +1,7 @@
+{
+	"name": "ie.itcarlow.patrol",
+	"version": "0.1.2",
+	"displayName": "Patrol",
+	"description": "An enemy that patrols a platform",
+	"unity": "2021.3"
+}
