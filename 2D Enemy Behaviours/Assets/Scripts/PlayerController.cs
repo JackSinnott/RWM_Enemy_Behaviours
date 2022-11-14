@@ -33,8 +33,11 @@ public class PlayerController : MonoBehaviour
        
         if (IsGrounded())
         {
-            if(Input.GetKeyDown(KeyCode.Space))
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
                 _rb.velocity = Vector2.up * jumpForce;
+                Debug.Log("Should be jumping");
+            }
         }
     }
 
