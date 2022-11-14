@@ -1,0 +1,7 @@
+{
+	"name": "ie.itcarlow.patrol",
+	"version": "0.2.1",
+	"displayName": "EnemyTypes",
+	"description": "A template for enemy beahviours",
+	"unity": "2021.3"
+}
