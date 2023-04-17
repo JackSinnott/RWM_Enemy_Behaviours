@@ -16,12 +16,15 @@ public class PatrolEnemy : MonoBehaviour
     private RaycastHit2D _endOfPlatformRay;
     private bool _movingLeft = true;
 
-    private void Start()
+    private void Awake()
     {
         _rb = this.GetComponent<Rigidbody2D>();
         _boxCollider = this.GetComponent<BoxCollider2D>();
         _spRenderer = this.GetComponent<SpriteRenderer>();
+    }
 
+    private void Start()
+    {
         if (_player == null) _player = GameObject.FindGameObjectWithTag("Player");
     }
 
@@ -61,7 +64,7 @@ public class PatrolEnemy : MonoBehaviour
         return _endOfPlatformRay.collider != null;
     }
 
-    private void FlipSprite()
+    public void FlipSprite()
     {
         _spRenderer.flipX = !_spRenderer.flipX;
         _rb.velocity = new Vector2(0f, 0f);
