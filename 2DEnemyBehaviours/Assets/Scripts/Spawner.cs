@@ -33,8 +33,12 @@ public class Spawner : MonoBehaviour
     {
         if (!spawned)
         {
-            var enemy = Instantiate(_patrolEnemy, transform.position/*new Vector3(transform.position.x, -3.31f, transform.position.y)*/, Quaternion.identity).GetComponent<PatrolEnemy>();
+            var enemy = Instantiate(_patrolEnemy, transform.position, Quaternion.identity).GetComponent<PatrolEnemy>();
             spawned = true;
+            if (_playerDirection.x > 0)
+            {
+                enemy.FlipSprite();
+            }
         }
     }
 }

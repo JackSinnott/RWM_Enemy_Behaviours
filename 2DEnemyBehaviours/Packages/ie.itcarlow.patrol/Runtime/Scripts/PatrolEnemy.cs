@@ -61,7 +61,7 @@ public class PatrolEnemy : MonoBehaviour
         return _endOfPlatformRay.collider != null;
     }
 
-    private void FlipSprite()
+    public void FlipSprite()
     {
         _spRenderer.flipX = !_spRenderer.flipX;
         _rb.velocity = new Vector2(0f, 0f);
