@@ -31,7 +31,7 @@ public class InvincibleEnemy : MonoBehaviour
     void MoveLeft()
     {
         _pos -= transform.right * Time.deltaTime * _speed;
-        transform.position = _pos /*+ transform.up * Mathf.Sin(Time.time * _frequency) * _magnitude*/;
+        transform.position = _pos + transform.up * Mathf.Sin(Time.time * _frequency) * _magnitude;
     }
 
 }
