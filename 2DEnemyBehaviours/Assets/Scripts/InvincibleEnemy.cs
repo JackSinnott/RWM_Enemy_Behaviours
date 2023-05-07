@@ -13,10 +13,14 @@ public class InvincibleEnemy : MonoBehaviour
     [SerializeField] private float _maxBounds;
     [SerializeField] private float _minBounds;
 
+    [SerializeField] private PlayerDamage _player;
+
     private void Start()
     {
         _pos = new Vector3(12,Random.Range(_minBounds, _maxBounds),0);
         transform.position = _pos;
+
+        _player = FindObjectOfType<PlayerDamage>();
     }
 
     private void Update()
@@ -34,4 +38,11 @@ public class InvincibleEnemy : MonoBehaviour
         transform.position = _pos + transform.up * Mathf.Sin(Time.time * _frequency) * _magnitude;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.collider.CompareTag("Player"))
+        {
+            _player.DamagePlayer();
+        }
+    }
 }

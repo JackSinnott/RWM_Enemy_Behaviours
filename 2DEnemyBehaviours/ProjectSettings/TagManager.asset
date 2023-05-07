@@ -8,6 +8,8 @@ TagManager:
   - Patrol
   - Enemy_Shooter
   - Bullet
+  - Spawner
+  - Invincible
   layers:
   - Default
   - TransparentFX
