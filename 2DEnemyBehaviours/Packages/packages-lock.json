@@ -225,8 +225,8 @@
       },
       "url": "https://packages.unity.com"
     },
-    "ie.itcarlow.patrol": {
-      "version": "file:ie.itcarlow.patrol",
+    "ie.itcarlow.enemybehaviours": {
+      "version": "file:ie.itcarlow.enemybehaviours",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
