@@ -21,17 +21,17 @@ public class InvincibleEnemy : MonoBehaviour
 
     private void Update()
     {
-        //MoveLeft();
-        //if(_pos.x < -12)
-        //{
-        //    this.gameObject.SetActive(false);
-        //}
+        MoveLeft();
+        if (_pos.x < -12)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
-    //void MoveLeft()
-    //{
-    //    _pos -= transform.right * Time.deltaTime * _speed;
-    //    transform.position = _pos + transform.up * Mathf.Sin(Time.time * _frequency) * _magnitude;
-    //}
+    void MoveLeft()
+    {
+        _pos -= transform.right * Time.deltaTime * _speed;
+        transform.position = _pos /*+ transform.up * Mathf.Sin(Time.time * _frequency) * _magnitude*/;
+    }
 
 }
