@@ -144,7 +144,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8104825187895784688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab4ca6787da41af49a5fc3cd0fd43035, type: 3}
+  m_Script: {fileID: 11500000, guid: b108100675836c7489c95d0e52733a11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: -2
@@ -197,7 +197,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.29850245, y: 2.2984543}
@@ -222,6 +222,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8104825188426743108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e704389bde1a49b45a0e7a74a60bf181, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6d9ad29e858db4b800e73b2542a417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

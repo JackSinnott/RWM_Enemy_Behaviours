@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33431464860464951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.24, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 33431464860464951}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e704389bde1a49b45a0e7a74a60bf181, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6d9ad29e858db4b800e73b2542a417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &803771924238276803
@@ -84,7 +84,7 @@ GameObject:
   - component: {fileID: 33431464419442920}
   m_Layer: 0
   m_Name: Spawner
-  m_TagString: Untagged
+  m_TagString: Spawner
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 803771924238276803}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8f854e5d549d3f4c89c213c24495e2d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7b2925d3de277a249b0afa065d55fc86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _patrolEnemy: {fileID: 8104825187895784587, guid: 0099892f8ec5ec144be69aca73274e9b, type: 3}

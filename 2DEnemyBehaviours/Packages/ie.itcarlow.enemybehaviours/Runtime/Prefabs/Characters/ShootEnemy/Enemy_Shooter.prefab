@@ -55,7 +55,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3850418567962676320}
   - component: {fileID: 3850418567962676326}
-  - component: {fileID: 3850418567962676321}
+  - component: {fileID: 3697720881708774646}
   m_Layer: 0
   m_Name: HeadCheck
   m_TagString: Untagged
@@ -104,7 +104,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.0111823, y: 0.68452096}
   m_EdgeRadius: 0
---- !u!114 &3850418567962676321
+--- !u!114 &3697720881708774646
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,7 +113,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3850418567962676323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5d15b7e582a46747b5dfccc471f0228, type: 3}
+  m_Script: {fileID: 11500000, guid: dc6d9ad29e858db4b800e73b2542a417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &3850418569741122245
@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 3850418569741122249}
   - component: {fileID: 3850418569741122248}
   - component: {fileID: 3850418569741122251}
-  - component: {fileID: 3850418569741122254}
+  - component: {fileID: 3081854798255731421}
   m_Layer: 0
   m_Name: Enemy_Shooter
   m_TagString: Enemy_Shooter
@@ -230,7 +230,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.6898727, y: 5.8645525}
   m_EdgeRadius: 0
---- !u!114 &3850418569741122254
+--- !u!114 &3081854798255731421
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -239,7 +239,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3850418569741122245}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53123ce5d89da4a4fb9f345bceb77e44, type: 3}
+  m_Script: {fileID: 11500000, guid: ac944b9e084c0564b92119eb85e1666b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_playerGO: {fileID: 0}

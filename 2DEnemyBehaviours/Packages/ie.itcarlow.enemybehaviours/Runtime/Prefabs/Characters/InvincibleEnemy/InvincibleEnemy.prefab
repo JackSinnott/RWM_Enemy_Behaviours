@@ -121,12 +121,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7922365479340557613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb6ad32d81744814db86ed565a0cad5a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1752100fbf89bd94d837ca22297c8406, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _speed: 5
   _frequency: 20
-  _magnitude: 0.5
+  _magnitude: 1
   _maxBounds: 3
   _minBounds: -3
   _player: {fileID: 0}

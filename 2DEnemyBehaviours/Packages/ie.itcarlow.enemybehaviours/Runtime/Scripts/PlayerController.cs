@@ -36,16 +36,8 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 _rb.velocity = Vector2.up * jumpForce;
+                Debug.Log("Should be jumping");
             }
-        }
-
-        if(horizontalInput < 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = false;
-        }
-        else if (horizontalInput > 0)
-        {
-            GetComponent<SpriteRenderer>().flipX = true;
         }
     }
 
